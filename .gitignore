@@ -1,0 +1,28 @@
+# Secretos y variables locales
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos temporales Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Archivos del sistema y editor
+.DS_Store
+.vscode/
+
+# Archivos de ejecución local
+*.log
+
+# Documentacion personal de los hitos
+Hitos/
+
+# Archivos de modelado Looping
+*.lo1
+*.loo
+
