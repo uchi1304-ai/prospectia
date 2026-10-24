@@ -1,0 +1,23 @@
+name: prospectia
+
+services: 
+  backend: 
+    image: ursula1304/prospectia-backend:latest
+    container_name: prospectia-backend 
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend: 
+    image: ursula1304/prospectia-frontend:latest
+    container_name: prospectia-frontend
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
