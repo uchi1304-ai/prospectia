@@ -1,0 +1,16 @@
+# Cache Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+
+# Archivos innecesarios
+.git/
+*.log
